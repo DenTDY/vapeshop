@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vape shop Den4ika</title>
+    <link rel="stylesheet" href="accets/style/style.css">
+</head>
+<body>
+ <header>
+    
+    <div class="height">
+        <div class="menu_rod">
+            <button onclick="myFunction()" class="menu">Меню</button>
+            <div id="Menu" class="menu_doch">
+                <a href="accets/dochstr/jiji.html"> 
+                    <div class = "cnop">
+                        Жижи 
+                    </div>
+                </a>
+                <a href="accets/dochstr/odnorazki.html"> 
+                    <div class = "cnop">
+                        Одноразки
+                    </div>
+                </a>
+                <a href="accets/dochstr/ispariki.html">
+                     <div class = "cnop">
+                        Испарики
+                    </div>
+                </a>
+                <a href="accets/dochstr/podi.html">
+                     <div class = "cnop">
+                        Поды
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class = "log_num">
+            <div class = "log">
+                <img src="accets/img/log.jpg" width="234" height="100">
+            </div>
+            <div class = "num">Номер для связи<br>8-800-555-35-35</div>
+            <div class = "naz_glav">Vape shop Denchika</div> 
+        </div>
+        <body bgcolor="000000"></body>
+    </div>
+    <div class = "nad_kartoi">Наш адрес</div>
+   
+    <div class="karta_rod">
+       
+        <div class="karta_doch">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2020.5462024565275!2d45.18310172860782!3d54.189932302710005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414408c20bd92861%3A0xb633979e66b36c9a!2z0JHQvtC70YzRiNC10LLQuNGB0YLRgdC60LDRjyDRg9C7LiwgNjcsINCh0LDRgNCw0L3RgdC6LCDQoNC10YHQvy4g0JzQvtGA0LTQvtCy0LjRjywgNDMwMDAw!5e0!3m2!1sru!2sru!4v1664612962478!5m2!1sru!2sru" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+ </header>
+        <script>
+            function myFunction() {
+                document.getElementById("Menu").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+              if (!event.target.matches('.menu')) {
+                var dropdowns = document.getElementsByClassName("menu_doch");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>        
+</body>
+</html>
